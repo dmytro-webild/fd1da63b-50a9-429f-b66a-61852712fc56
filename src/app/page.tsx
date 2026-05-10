@@ -47,7 +47,7 @@ export default function LandingPage() {
       description="Your AI Career OS. Upload your resume once. Our AI finds matching jobs, tailors every application, and auto-applies — while you focus on interviews."
       buttons={[
         { text: "Start free", href: "/dashboard/signup" },
-        { text: "Watch demo", href: "#about" },
+        { text: "Watch demo", onClick: () => document.querySelector('#about')?.scrollIntoView({ behavior: 'smooth' }) },
       ]}
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3CTp9HlzPTLvEO9qiPPl1ht7pQh/a-clean-modern-professional-dashboard-ui-1778414411675-222d7d70.jpg"
       imageAlt="JobScraper AI Dashboard"
@@ -59,6 +59,7 @@ export default function LandingPage() {
       useInvertedBackground={true}
       title="From resume to offer in three steps"
       description="Set up once. JobScraper.ai handles discovery, tailoring, applying and tracking — automatically. Upload your resume, let the AI find and tailor the perfect roles, then sit back while we auto-apply."
+      buttons={[{ text: "Get Started", href: "/dashboard/signup" }]}
       imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3CTp9HlzPTLvEO9qiPPl1ht7pQh/a-high-quality-3d-render-of-a-resume-bei-1778414420545-eee900ef.png"
       imageAlt="Resume analysis process"
     />
@@ -76,6 +77,7 @@ export default function LandingPage() {
       ]}
       title="Everything you need to land the offer"
       description="Nine systems working in unison so you can apply to 100–300 quality jobs a week."
+      buttons={[{ text: "Explore Features", href: "/dashboard/signup" }]}
     />
   </div>
 
@@ -86,6 +88,7 @@ export default function LandingPage() {
       names={["LinkedIn", "Indeed", "Workday", "Greenhouse", "Lever", "ZipRecruiter", "Glassdoor"]}
       title="Works wherever you apply"
       description="Install our Chrome extension to get live match scores, autofill, and AI-tailored applications across LinkedIn, Workday, Lever, Greenhouse, and more."
+      buttons={[{ text: "Download Extension", href: "/dashboard/signup" }]}
     />
   </div>
 
@@ -159,7 +162,7 @@ export default function LandingPage() {
       <FooterSimple
       columns={[
         { title: "Product", items: [{ label: "Features", href: "#features" }, { label: "Pricing", href: "#pricing" }] },
-        { title: "Company", items: [{ label: "Contact", href: "#contact" }, { label: "Privacy", href: "#" }, { label: "Terms", href: "#" }] },
+        { title: "Company", items: [{ label: "Contact", href: "#contact" }, { label: "Privacy", href: "/privacy" }, { label: "Terms", href: "/terms" }] },
       ]}
       bottomLeftText="© 2026 JobScraper.ai"
       bottomRightText="Apply smarter. Get hired faster."
