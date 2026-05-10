@@ -42,7 +42,7 @@ export default function LandingPage() {
       ]}
       brandName="JobScraper.ai"
       button={{
-        text: "Start free",        href: "#contact"}}
+        text: "Start free",        href: "/dashboard/signup"}}
     />
   </div>
 
@@ -52,7 +52,7 @@ export default function LandingPage() {
       description="Your AI Career OS. Upload your resume once. Our AI finds matching jobs, tailors every application, and auto-applies — while you focus on interviews."
       buttons={[
         {
-          text: "Start free",          href: "#contact"},
+          text: "Start free",          href: "/dashboard/signup"},
         {
           text: "Watch demo",          href: "#about"},
       ]}
@@ -117,7 +117,7 @@ export default function LandingPage() {
             "10 applications/month",            "Resume analysis",            "ATS scoring"],
           buttons: [
             {
-              text: "Start free",              href: "#contact"},
+              text: "Start free",              href: "/dashboard/signup"},
           ],
         },
         {
@@ -125,7 +125,7 @@ export default function LandingPage() {
             "AI resume tailoring",            "Unlimited tracking",            "Cover letter generator"],
           buttons: [
             {
-              text: "Go Pro",              href: "#contact"},
+              text: "Go Pro",              href: "/dashboard/signup"},
           ],
         },
         {
@@ -133,7 +133,7 @@ export default function LandingPage() {
             "Full AI auto-apply",            "Smart matching engine",            "Safe Apply Mode"],
           buttons: [
             {
-              text: "Activate AutoPilot",              href: "#contact"},
+              text: "Activate AutoPilot",              href: "/dashboard/signup"},
           ],
         },
       ]}
@@ -196,7 +196,7 @@ export default function LandingPage() {
       text="Stop applying. Start interviewing. Let JobScraper.ai do the heavy lifting."
       buttons={[
         {
-          text: "Start free - No card needed",          href: "#"},
+          text: "Get Started Free",          href: "/dashboard/signup"},
       ]}
     />
   </div>
